@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/detail/detail",
+    "pages/publish/publish"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#52b9d2",
+    "navigationBarTitleText": "萌宠交易圈"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

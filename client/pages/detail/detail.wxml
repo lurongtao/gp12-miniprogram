@@ -1,0 +1,28 @@
+<view class="pub-container">
+  <view class="item">
+    <view class="label">我的地址</view>
+    <view class="content">{{address}}</view>
+  </view>
+  <view class="item">
+    <view class="label">类型</view>
+    <view class="content">
+      {{type}}
+    </view>
+  </view>
+  <view class="item">
+    <view class="label">说明</view>
+    <view class="content">
+      {{message}}
+    </view>
+  </view>
+  <view class="item">
+    <view class="label">联系方式</view>
+    <view class="content">
+      {{contact}}
+    </view>
+  </view>
+
+  <view class="button">
+    <button bindtap="primary" bindtap="handleBackTap"> 返回 </button>
+  </view>
+</view>

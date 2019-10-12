@@ -1,0 +1,21 @@
+<view class="index-container">
+  <view>
+    <map id="map" markers="{{markers}}" bindmarkertap="handeMarkerTap" longitude="{{longitude}}" latitude="{{latitude}}" scale="16" show-location>
+      <cover-view class="icon-nav" bindtap="handleNavTap">
+        <cover-image src="/resources/center.png"></cover-image>
+      </cover-view>
+      <cover-view class="icon-loc">
+        <cover-image src="/resources/pin.png"></cover-image>
+      </cover-view>
+    </map>
+  </view>
+
+  <view>
+    <navigator open-type="navigateTo" url="/pages/publish/publish">
+      <view class="publish">发布</view>
+    </navigator>
+    <navigator open-type="navigateTo" url="/pages/search/search">
+      <view class="search">搜索</view>
+    </navigator>
+  </view>
+</view>

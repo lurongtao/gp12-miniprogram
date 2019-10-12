@@ -1,0 +1,38 @@
+<view class="pub-container" wx:if="{{!isSubmit}}">
+  <view class="item">
+    <view class="label">我的地址</view>
+    <view class="content" bindtap="handleAddrTap">{{address}}</view>
+  </view>
+  <view class="item">
+    <view class="label">类型</view>
+    <view class="content">
+      <radio-group class="radio-group" bindchange="radioChange">
+        <radio value="buy" checked="{{true}}" class="radio">
+          <text>求购</text>
+        </radio>
+        <radio value="sell" class="radio">
+          <text>转让</text>
+        </radio>
+      </radio-group>
+    </view>
+  </view>
+  <view class="item">
+    <view class="label">说明</view>
+    <view class="content">
+      <input bindinput="handleMessageInput" class="weui-input" placeholder="请输入说明" />
+    </view>
+  </view>
+  <view class="item">
+    <view class="label">联系方式</view>
+    <view class="content">
+      <input bindinput="handleContactInput" class="weui-input" placeholder="请输入联系方式" />
+    </view>
+  </view>
+
+  <view class="button">
+    <button bindtap="primary" bindtap="handleSubmitTap"> 发布信息 </button>
+  </view>
+</view>
+
+<import src="../../template/notify.wxml"></import>
+<template is="notify" data="{{isSuccess}}" wx:if="{{isSubmit}}"></template>

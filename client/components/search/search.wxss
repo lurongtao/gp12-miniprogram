@@ -1,0 +1,23 @@
+.searchbar {
+  display: flex;
+  height: 80rpx;
+  background: #52b9d2;
+}
+
+.inputarea {
+  flex: 1;
+  padding: 5rpx 20rpx 10rpx 20rpx;
+}
+
+.inputarea input {
+  height: 60rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  padding: 0 10rpx;
+}
+
+.searchbtn {
+  color: #fff;
+  width: 100rpx;
+  line-height: 70rpx;
+}

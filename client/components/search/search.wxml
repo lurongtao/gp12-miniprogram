@@ -1,0 +1,8 @@
+<view class="searchbar">
+  <view class="inputarea">
+    <input bindinput="handleInput"></input>
+  </view>
+  <view class="searchbtn">
+    <text bindtap="handleClick">搜索</text>
+  </view>
+</view>

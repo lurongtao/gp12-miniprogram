@@ -1,0 +1,4 @@
+<mp-searchbar
+  search="{{handleSearch}}"
+  bindselectresult="selectResult"
+/>
