@@ -1,4 +1,15 @@
-<mp-searchbar
-  search="{{handleSearch}}"
-  bindselectresult="selectResult"
-/>
+<view class="search-container">
+  <mp-searchbar
+    bindblur="handleBlur"
+  />
+  <scroll-view scroll-y="true" class="result">
+    <view class="item" wx:for="{{results}}" wx:key="{{item.id}}">
+     <view class="address">
+        <text>{{item.address}}</text>
+      </view>
+      <view class="message">
+        <text>{{item.message}}</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>
